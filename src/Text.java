@@ -1,26 +1,26 @@
 public class Text {
     private final static String greeting = "Добро пожаловать в телефонный справочник!";
-    private final static String menuStart =    "\n1.Загрузить справочник из файла  " +
+    private final static String menuStart = "\n1.Загрузить справочник из файла  " +
             "\n2.Просмотреть текущий справочник " +
             "\n3.Найти контакт  " +
             "\n4.Удалить контакт  " +
             "\n5.Добавить контакт  " +
             "\n6.Изменить контакт  " +
             "\n7.Записать текущий справочник в файл " +
-            "\n8.Выход" ;
-    private final static String menuReaderStart =          "\n1.Загрузить из файла 1 " +
+            "\n8.Выход";
+    private final static String menuReaderStart = "\n1.Загрузить из файла 1 " +
             "\n2.Загрузить из файла 2 " +
-            "\n3.Выйти в главное меню" ;
-    private final static String menuFinderStart =  "\n1.Поиск по имени  " +
+            "\n3.Выйти в главное меню";
+    private final static String menuFinderStart = "\n1.Поиск по имени  " +
             "\n2.Поиск по фамилии  " +
             "\n3.Поиск по телефону  " +
-            "\n4.Exit" ;
+            "\n4.Exit";
 
     private final static String phonebookUpdate = "\nТелефонный справочник успешно обновлен";
 
     private final static String enterFName = "\n1.Введите имя : ";
     private final static String enterLName = "\n1.Введите фамилию : ";
-    private final  static String enterDateBtsd = "\n1.Введите дату рождения : ";
+    private final static String enterDateBtsd = "\n1.Введите дату рождения : ";
     private final static String enterNumber = "\n1.Введите телефон : ";
     private final static String enterNumberwork = "\n1.Введите рабочий телефон : ";
     private final static String enterNumberMob = "\n1.Введите мобильный телефон : ";
@@ -34,9 +34,9 @@ public class Text {
     private final static String inputNewLName = "\n1.Введите новую фамилию: ";
     private final static String inputNewDBirthDay = "\n1.Введите новую дату рождения: ";
     private final static String inputNewHomeNumber = "\n1.Введите новый домашний номер: ";
-    private final static String menuFinderNotFondContact =     "\n1.Новый поиск " +
-            "\n2.Exit " ;
-    private final static String menuChange =    "\n1.Изменить Имя " +
+    private final static String menuFinderNotFondContact = "\n1.Новый поиск " +
+            "\n2.Exit ";
+    private final static String menuChange = "\n1.Изменить Имя " +
             "\n2.Изменить Фамилию" +
             "\n3.Изменить дату рождения" +
             "\n4.Изменить номер домашний" +
@@ -44,7 +44,7 @@ public class Text {
             "\n6.Изменить номер рабочий" +
             "\n7.Изменить комментарий" +
             "\n8.Вернуться назад(-=пропустить контакт=-)";
-    private final static String menuWriterStart =   "\n1.Построчный формат " +
+    private final static String menuWriterStart = "\n1.Построчный формат " +
             "\n2.Блочный формат " +
             "\n3.Выход";
     private final static String instruction1 = "Для работы введите нужный пункт меню: ";
@@ -54,11 +54,10 @@ public class Text {
     private final static String inputNewMobileNumber = "\n1.Введите новый мобильный номер: ";
     private final static String matchesFound = "\nЕсть совпадения: ";
 
-    private final  static String isNotNumber = "\nВы ввели не целое число.";
+    private final static String isNotNumber = "\nВы ввели не целое число.";
     private final static String isNotDate = "\nВы ввели не дату. \n'хх.хх.хххх' ";
     private final static String inputNewWorkNumber = "\n1.Введите новый рабочий номер: ";
     private final static String inputNewComment = "\n1.Введите новый комментарий: ";
-
 
 
     public String getInputNewFName() {
@@ -121,7 +120,7 @@ public class Text {
         return closeApplication;
     }
 
-    public  String getEnterFName() {
+    public String getEnterFName() {
         return enterFName;
     }
 
@@ -145,6 +144,7 @@ public class Text {
     public String getMatchesFound() {
         return matchesFound;
     }
+
     public String getFileWrite() {
         return fileWrite;
     }

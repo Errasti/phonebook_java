@@ -1,10 +1,11 @@
 import java.util.ArrayList;
 
-public class ContactSearcher extends Contact{
+public class ContactSearcher extends Contact {
     private Contact finder = new Contact();
     private UserInput u = new UserInput();
     private ArrayList<Contact> dataBase;
     private ArrayList<Contact> findContact;
+
     public UserInput getU() {
         return u;
     }
@@ -24,7 +25,7 @@ public class ContactSearcher extends Contact{
         this.findContact = new ArrayList<>();
     }
 
-    public ContactSearcher(){
+    public ContactSearcher() {
         super();
         this.dataBase = new ArrayList<>();
         this.findContact = new ArrayList<>();
@@ -45,12 +46,13 @@ public class ContactSearcher extends Contact{
     public ArrayList<Contact> getFindContact() {
         return findContact;
     }
+
     public void setFindContact(ArrayList<Contact> findContact) {
         this.findContact = findContact;
     }
 
     public void showContact(ArrayList<Contact> data, int num) {
-        for (Contact c: data
+        for (Contact c : data
         ) {
             if (num == 1) {
                 if (this.finder.getName().getFirstName().equals(c.getName().getFirstName().toLowerCase())) {
@@ -63,7 +65,7 @@ public class ContactSearcher extends Contact{
                     this.findContact.add(c);
                 }
             } else if (num == 3) {
-                if (    c.getNumber().getNumberHome() == this.finder.getNumber().getNumberHome() ||
+                if (c.getNumber().getNumberHome() == this.finder.getNumber().getNumberHome() ||
                         c.getNumber().getNumberMobile() == this.finder.getNumber().getNumberHome() ||
                         c.getNumber().getNumberWork() == this.finder.getNumber().getNumberHome()) {
                     new PrinterContact(c).printCtc();
@@ -83,18 +85,18 @@ public class ContactSearcher extends Contact{
             if (u.getInput().equals("1")) {
                 u.UInput(new Text().getEnterFName());
                 finder.getName().setFirstName(u.getInput().toLowerCase());
-                this.showContact(dataBase,1);
+                this.showContact(dataBase, 1);
                 break;
             } else if (u.getInput().equals("2")) {
                 u.UInput(new Text().getEnterLName());
                 finder.getName().setLastName(u.getInput().toLowerCase());
-                showContact(dataBase,2);
+                showContact(dataBase, 2);
                 break;
             } else if (u.getInput().equals("3")) {
                 u.UInput(new Text().getEnterNumber());
                 if (u.isInteger()) {
                     finder.getNumber().setNumberHome(Integer.parseInt(u.getInput().toLowerCase()));
-                    showContact(dataBase,3);
+                    showContact(dataBase, 3);
                     break;
                 } else {
                     new Printer(new Text().getIsNotNumber()).print();

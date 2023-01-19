@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.function.Consumer;
 
-public class Phonebook  implements Comparator<Contact>, Iterable<Contact> {
+public class Phonebook implements Comparator<Contact>, Iterable<Contact> {
 
     private DataBase dataBase;
     private AddNewContact newContact;
@@ -81,10 +81,10 @@ public class Phonebook  implements Comparator<Contact>, Iterable<Contact> {
     @Override
     public int compare(Contact o1, Contact o2) {
         if (o1.getName().getFirstName().toLowerCase().equals(o2.getName().getFirstName().toLowerCase()) &&
-                o1.getName().getLastName().toLowerCase().equals(o2.getName().getLastName().toLowerCase())  &&
-                o1.getNumber().getNumberHome() == o2.getNumber().getNumberHome()  &&
-                o1.getNumber().getNumberWork() == o2.getNumber().getNumberWork()  &&
-                o1.getNumber().getNumberMobile() == o2.getNumber().getNumberMobile()  &&
+                o1.getName().getLastName().toLowerCase().equals(o2.getName().getLastName().toLowerCase()) &&
+                o1.getNumber().getNumberHome() == o2.getNumber().getNumberHome() &&
+                o1.getNumber().getNumberWork() == o2.getNumber().getNumberWork() &&
+                o1.getNumber().getNumberMobile() == o2.getNumber().getNumberMobile() &&
                 o1.getDateOfBirth() == o2.getDateOfBirth()
         ) {
             return 0;

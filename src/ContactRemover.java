@@ -7,11 +7,11 @@ public class ContactRemover extends ContactSearcher {
     }
 
     public void deleteContact(ArrayList<Contact> findContact) {
-        for (Contact c:
+        for (Contact c :
                 findContact
         ) {
             this.getDataBase().remove(c);
-            new Printer(c.getName().getFirstName() +" " + c.getName().getLastName() + " упешно удалён!").print();
+            new Printer(c.getName().getFirstName() + " " + c.getName().getLastName() + " упешно удалён!").print();
         }
     }
 }

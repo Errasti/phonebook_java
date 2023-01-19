@@ -27,7 +27,7 @@ public class Application {
             } else if (userInput.getInput().equals("5")) {
                 AddNewContact newContact = new AddNewContact();
                 newContact.enterNewContact();
-                newContact = new AddNewContact(newContact.getName().getFirstName(),newContact.getName().getLastName(),
+                newContact = new AddNewContact(newContact.getName().getFirstName(), newContact.getName().getLastName(),
                         newContact.getDateOfBirth(), newContact.getNumber().getNumberHome(), newContact.getCommentary().getComment());
                 newContact.add(phonebook.getDataBase().getDataBase());
             } else if (userInput.getInput().equals("6")) {

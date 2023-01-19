@@ -11,7 +11,7 @@ public class ChangeContact extends ContactSearcher {
     }
 
     public void changeContact() {
-        for (Contact c:
+        for (Contact c :
                 getFindContact()
         ) {
             while (true) {

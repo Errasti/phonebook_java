@@ -23,7 +23,7 @@ public class UserInput {
         return input;
     }
 
-    public void UInput (String s){
+    public void UInput(String s) {
         System.out.printf("%s ", s);
         setInput(scanner.nextLine());
     }

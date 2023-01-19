@@ -5,7 +5,7 @@ public class Printer {
         this.string = string;
     }
 
-    public void print(){
+    public void print() {
         System.out.println(this.string);
     }
 

@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Import1 {
-    private  BufferedReader reader;
+    private BufferedReader reader;
 
     private DataBase dataBase;
     private String line;
@@ -25,8 +25,8 @@ public class Import1 {
     }
 
     public void readFile() throws IOException {
-        try{
-            while((line = reader.readLine()) != null){
+        try {
+            while ((line = reader.readLine()) != null) {
                 base.add(line.split(","));
             }
         } catch (IOException e) {
@@ -51,12 +51,13 @@ public class Import1 {
     public BufferedReader getReader() {
         return reader;
     }
+
     public ArrayList<String[]> getBase() {
         return base;
     }
 
     public void ghostData() {
-        for (String[] c: this.base
+        for (String[] c : this.base
         ) {
             if (c.length == 7) {
                 data.add(new AddNewContact(c[0], c[1], c[2], Integer.parseInt(c[3]), Integer.parseInt(c[4]), Integer.parseInt(c[5]), c[c.length - 1]));

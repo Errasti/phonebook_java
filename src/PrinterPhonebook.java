@@ -11,7 +11,7 @@ public class PrinterPhonebook extends Phonebook {
         new Printer("").print();
         new Printer("Состояние текущей базы данных: ").print();
         new Printer("===============*******===============").print();
-        for (Contact c: dataBase.getDataBase()
+        for (Contact c : dataBase.getDataBase()
         ) {
             new PrinterContact(c).printCtc();
         }
